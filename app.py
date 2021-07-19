@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from ranking import rank
 import nltk
-#nltk.download('punkt')
+nltk.download('punkt')
 
 
 app = Flask(__name__)
