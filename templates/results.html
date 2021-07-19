@@ -17,12 +17,12 @@
        <div style="font-family:TechnicBold">
         <p>
           <center>
-          <font size="6">Search using Corpus embeddings Generated from Sentence Transformers and BM25 Gene Score "BRAF (V600E)"</font>
+          <font size="6">Search Engine Based on Corpus embeddings Generated from Sentence Transformers and BM25 Gene Score "BRAF (V600E)"</font>
           </center>
         </p>
           <p>
           <center>
-          <font size="6">Query : {{ query }}</font>
+          <font size="6">Query Given : {{ query }}</font>
           </center>
         </p>
       </div>
@@ -30,7 +30,7 @@
 
   <form action="/search/results" method="post">
     <div class="input-group">
-      <input type="text" class="form-control input-lg" name="input" placeholder="Search"  autofocus>
+      <input type="text" class="form-control input-lg" style="padding-left:435px" name="input" placeholder="Search"  autofocus>
       <div class="input-group-btn">
         <button class="btn btn-primary btn-lg" type="submit">
           <i class="glyphicon glyphicon-search"></i>
@@ -42,26 +42,29 @@
   <table class="table">
     <thead>
       <tr>
-        <th style="padding-left:220px" >   Source</th>
+          <th style="padding-left:45px">Title</th>
+        <th style="padding-left:220px" > Source</th>
         <th style="padding-left:45px">Score</th>
-        <th style="padding-left:45px">Title</th>
+
       </tr>
     </thead>
 
 {% for i in range(1,10) %}
     <tbody>
       <tr>
+          <td>{{ title[i] }}</td>
           <td><a href="{{ res[i] }}">{{ res[i] }}</a></td>
           <td>{{ score[i]*-1 }}</td>
-          <td>{{ title[i] }}</td>
+
       </tr>
     </tbody>
 {% endfor %}
   </table>
 
         <footer class="footer">
-            <h2><center>&copy; 2021 OWAIS AHMAD</center></h2>
-          <h2><center>Please See My<a href="https://owaiskhan9654.github.io/"> Portfolio  </a>Also</center></h2>
+            <h3 style="padding-left:125px"S>This Search Engine is Still in Development Phase and for Research Purpose Only</h3>
+            <h3><center>&copy; 2021 OWAIS AHMAD</center></h3>
+          <h3><center>Please Checkout My<a href="https://owaiskhan9654.github.io/"> Portfolio  </a>Also &#128293</center></h3>
 
 
         </footer>
