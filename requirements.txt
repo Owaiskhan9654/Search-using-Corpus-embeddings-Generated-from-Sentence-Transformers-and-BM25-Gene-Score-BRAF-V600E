@@ -31,7 +31,6 @@ typing-extensions==3.7.4.3
 urllib3==1.26.3
 Werkzeug==1.0.1
 wincertstore==0.2
-=======
 certifi==2020.12.5
 chardet==4.0.0
 filelock==3.0.12
@@ -49,18 +48,12 @@ pyparsing==2.4.7
 python-dateutil==2.8.1
 pytz==2020.5
 rank-bm25==0.2.1
-regex==2020.11.13
 requests==2.25.1
 sacremoses==0.0.43
-scikit-learn==0.24.1
-scipy==1.5.4
-sentence-transformers==0.4.1.2
 sentencepiece==0.1.95
 six==1.15.0
 threadpoolctl==2.1.0
 tokenizers==0.9.4
-tqdm==4.56.0
-transformers==4.2.2
 typing-extensions==3.7.4.3
 urllib3==1.26.3
 Werkzeug==1.0.1
