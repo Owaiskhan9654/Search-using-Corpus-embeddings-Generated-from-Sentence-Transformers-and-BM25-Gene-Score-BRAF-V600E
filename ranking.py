@@ -24,7 +24,7 @@ def rank(query):
 
 
 
-    embedding_file = "data/models/PM_Articles_DistilledBert_reduced.emb"
+    embedding_file = "models/PM_Articles_DistilledBert_reduced.emb"
     with open(embedding_file, mode='rb') as emb_f:
         corpus_embeddings = pickle.load(emb_f)
 
